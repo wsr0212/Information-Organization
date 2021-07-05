@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>身份查询</title>
+    <link rel="stylesheet" type="text/css" href="static/demo.css"/>
+</head>
+<body>
+<div class="form">
+<table width="90%" style="margin-left:30px ;margin-top: 20px;">
+        <tr height="50px">
+            <td width="25px">ID</td>
+            <td width="40px">姓名</td>
+            <td width="40px">年龄</td>
+            <td width="60px">家乡</td>
+        </tr>
+        {% for list in lists %}
+            <tr height="30px">
+                <td>{{ list[0] }}</td>
+                <td>{{ list[1] }}</td>
+                <td>{{ list[2] }}</td>
+                <td>{{ list[3] }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</div>
+</body>
+</html>
