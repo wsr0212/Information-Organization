@@ -3,7 +3,8 @@
 <br>主要使用`pycharm`，并且在完成后上传github，所以几乎没有commit记录</br>
 <br>具体有以下一些增加：</br>
 - 最simple的——改变了一下`demo.css`中的背景图片
-- 增加了一个`query.html`，包含有根据身份(undergraduate、postgradute、doctoral)筛选出的信息，并以`form`的形式呈现。
+- 增加了一个`query.html`(模仿`manage
+.html`)，包含有根据身份(undergraduate、postgradute、doctoral)筛选出的信息，并以`form`的形式呈现。
   ```
     @app.route('/query',methods=['post','get'])
     def query():
